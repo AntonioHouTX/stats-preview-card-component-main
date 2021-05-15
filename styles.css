@@ -81,30 +81,22 @@ h1 {
 }
 
 @media screen and (min-width: 375px) /* Mobile Version */ {
-  main {  
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-  }
 
   .container {
+    width: 80%;
     border-radius: 5px;
-    margin: 5rem 2rem;
     display: grid;
-    /* grid-template-columns: .75fr; */
-    grid-template-rows: .60fr 1fr;
+    margin: 3em auto;
+    grid-template-rows: .6fr 1fr;
   }
 
   .pic {
     grid-row: 1 / 1;
     background-image: url("images/image-header-mobile.jpg");
     border-radius: 5px 5px 0 0;
-    /* margin: auto; */
+    margin: auto;
     background-size: cover;
-    /* width: 90%; */
-    /* height: 75%;
-    width: 75%; */
+    width: 100%;
   }
 
   .description {
