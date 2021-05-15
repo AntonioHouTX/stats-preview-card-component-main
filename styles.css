@@ -81,9 +81,16 @@ h1 {
 }
 
 @media screen and (min-width: 375px) /* Mobile Version */ {
+  main {  
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .container {
     border-radius: 5px;
-    margin: 5rem auto;
+    margin: 5rem 2rem;
     display: grid;
     /* grid-template-columns: .75fr; */
     grid-template-rows: .60fr 1fr;
