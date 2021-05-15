@@ -11,13 +11,6 @@ body {
 
 .container {
   background-color: hsl(244, 38%, 16%);
-  width: 100%;
-}
-
-/* The * represents Everything inside of the .container class, now everything inside of.container will have a maximum width of 100% relative to the .container  */
-
-.container * {
-  max-width: 100%;
 }
 
 .pic {
@@ -81,26 +74,28 @@ h1 {
 }
 
 @media screen and (min-width: 375px) /* Mobile Version */ {
-
+  
+  body{
+    padding: 2rem;
+  }
   .container {
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     display: grid;
-    margin: 3em auto;
     grid-template-rows: .6fr 1fr;
+
   }
 
   .pic {
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
     background-image: url("images/image-header-mobile.jpg");
     border-radius: 5px 5px 0 0;
-    margin: auto;
     background-size: cover;
     width: 100%;
   }
 
   .description {
-    grid-row: 2 / 2;
+    background-color: hsl(244, 38%, 16%);
   }
 
   h1 {
@@ -114,7 +109,6 @@ h1 {
   }
 
   .stats {
-    margin: 0 10rem;
     text-align: center;
   }
 
@@ -131,10 +125,8 @@ h1 {
   .container {
     /* USE THIS TO CENTER-ALIGN THE CONTAINER */
     margin: 100px auto;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border-radius: 5px;
     /* KEEP THE WIDTH STATIC INSTEAD OF APPLYING DYNAMIC MARGINS */
     width: 1090px;
   }
@@ -143,6 +135,7 @@ h1 {
     margin: 0rem 1rem;
     grid-column: 1 / 1;
     grid-row: 1 / 4;
+    border: 1px solid rgb(11, 228, 101);
   }
 
   h1 {
@@ -187,20 +180,18 @@ h1 {
   .companies {
     margin: 0rem 2rem 0rem 2.933rem;
     grid-column: 1 / 1;
-    grid-row: 1 / 1;    
-
+    grid-row: 1 / 1;
   }
 
   .templates {
     margin: 0rem 2.933rem 0rem 2rem;
     grid-column: 2 / 2;
-    grid-row: 1 / 1;    
+    grid-row: 1 / 1;
   }
 
   .queries {
     margin: 0rem 4rem 0rem 2rem;
     grid-column: 3 / 3;
-    grid-row: 1 / 1;    
+    grid-row: 1 / 1;
   }
 }
-
