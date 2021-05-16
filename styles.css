@@ -78,6 +78,7 @@ h1 {
   body{
     padding: 2rem;
   }
+
   .container {
     width: 100%;
     border-radius: 5px;
@@ -122,7 +123,17 @@ h1 {
   }
 }
 
+@media screen and (min-width: 768px) /* Tablet Version */ {
+
+  .companies,
+  .templates,
+  .queries {
+    margin: 1rem 20rem;
+  }
+}
+
 @media screen and (min-width: 1025px) /* Desktop Version */ {
+
   .container {
     /* USE THIS TO CENTER-ALIGN THE CONTAINER */
     margin: 100px auto;
@@ -136,7 +147,6 @@ h1 {
     margin: 0rem 1rem;
     grid-column: 1 / 1;
     grid-row: 1 / 4;
-    /* border: 1px solid rgb(11, 228, 101); */
   }
 
   h1 {
